@@ -19,8 +19,8 @@ and a Doctoral degree earned an average of $84,396/year.
 
 * */
 
-for (let i=0; i<10; i++) {
-    console.log("Count" + (10-i) + " !")
+for (let i = 0; i < 10; i++) {
+    console.log("Count" + (10 - i) + " !")
 }
 var education = 'no high school diploma';
 
@@ -89,3 +89,43 @@ class book extends React.Component {
     }
 }
 */
+
+/*
+ * Programming Quiz: JuliaJames (4-1)
+ */
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have a variable `x` with a starting value of `1`
+ * - Your code should include a `while` loop
+ * - Your `while` loop should have a stop condition
+ * - Your code should use a conditional statement
+ * - Your code should increment `x` by `1` each time the loop executes
+ * - Your code should produce the expected output
+ * - Your code should not be empty
+ * - BE CAREFUL ABOUT THE PUNCTUATION AND THE EXACT WORDS TO BE PRINTED.
+ */
+
+var x = 1;
+
+while (x <= 20) {
+
+    if (x % 3 === 0)
+        console.log("Julia")
+
+    else if (x % 5 === 0)
+        console.log("James")
+
+    else if (x % 3 === 0 && x % 5 === 0)
+        console.log("JuliaJames")
+    else
+        console.log(x)
+    x++
+}
+
+var num = 9;
+while (num > 0) {
+    console.log(num + ' bottles of juice on the wall! ' + num + ' bottles of juice! Take one down, ' +
+        'pass it around... ' + (num - 1) + ' bottles of juice on the wall!'
+    );
+    num--;
+}

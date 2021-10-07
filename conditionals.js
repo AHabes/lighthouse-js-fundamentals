@@ -1,36 +1,28 @@
-const cold = true;
-const temperature = -30;
-
-
-if (cold) {
-    console.log("Make sure you pick out a scarf!");
-} else {
-    console.log("Short sleeves are fine.");
+const whichSchool = function (age) {
+    switch (age) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+        case 11:
+        case 12:
+            return 'Elementary School';
+        case 13:
+        case 14:
+        case 15:
+        case 16:
+        case 17:
+        case 18:
+            return 'Secondary School';
+        default:
+            return 'Lighthouse Labs';
+    }
 }
 
-
-if (temperature < 0) {
-    console.log("Make sure you pick out a scarf!");
-} else if (temperature < 15) {
-    console.log("Short sleeves won't cut it!");
-} else {
-    console.log("Short sleeves are fine.");
-}
-
-console.log("Now you're ready to go outside!");
-
-const isCitizen = true;
-const age = 26;
-
-if (isCitizen && age > 18) {
-    console.log("You are eligible to vote.");
-}
-
-
-if (temperature < -40 || temperature > 40) {
-    console.log("Maybe going outside isn't such a great idea…");
-}
-
-if (!raining) {
-    console.log("Leave your umbrella at home!");
-}
+console.log(whichSchool(13))
